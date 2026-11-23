@@ -21,6 +21,7 @@ export function HeroSection({ onComplete }: HeroSectionProps = {}) {
   const sectionRef = useRef<HTMLElement>(null);
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const [hasError, setHasError] = useState(false);
+  const [isHeroReady, setIsHeroReady] = useState(false);
   const [activeSection, setActiveSection] = useState(1);
   const [contactReplay, setContactReplay] = useState(0);
   const [contactVisible, setContactVisible] = useState(false);
@@ -55,6 +56,8 @@ export function HeroSection({ onComplete }: HeroSectionProps = {}) {
 
       if (event.data?.type === "maiacoelho-hero:loaded") {
         syncState();
+      } else if (event.data?.type === "maiacoelho-hero:ready") {
+        setIsHeroReady(true);
       } else if (event.data?.type === "maiacoelho-hero:section") {
         const nextSection = Number(event.data.section) || 1;
         setActiveSection(nextSection);
@@ -133,7 +136,9 @@ export function HeroSection({ onComplete }: HeroSectionProps = {}) {
       <div
         aria-hidden="true"
         className={`pointer-events-none absolute inset-0 z-0 bg-[#141414] transition-opacity duration-500 ${
-          activeSection === 1 ? "opacity-100" : "opacity-0"
+          isHeroReady && activeSection === 1
+            ? "visible opacity-100"
+            : "invisible opacity-0"
         }`}
       >
         <Antigravity
