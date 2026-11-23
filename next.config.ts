@@ -17,6 +17,7 @@ const ZONES = [
   { path: "/onboard", origin: process.env.ZONE_ONBOARD_URL ?? "https://maiacoelho-onboard.vercel.app" },
   { path: "/awaken", origin: process.env.ZONE_AWAKEN_URL ?? "https://awaken-bakery.vercel.app" },
   { path: "/ironphysique", origin: process.env.ZONE_IRONPHYSIQUE_URL ?? "https://iron-physique-gym.vercel.app" },
+  { path: "/vivahype", origin: process.env.ZONE_VIVAHYPE_URL ?? "https://vivahype.vercel.app" },
 ];
 
 const nextConfig: NextConfig = {
