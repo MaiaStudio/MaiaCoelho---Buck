@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-display), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+  --color-tinta: #141414;
+  --color-papel: #F1F0EB;
+  --color-cenoura: #FF5A1F;
+  --color-pedra: #E4E2DA;
+  --color-pedra-escura: #D6D3C9;
+  --color-grafite: #2E2D2A;
+  --color-carvao: #3A3A37;
+  --color-cinza: #A3A39E;
+  --color-cinza-escuro: #5E5E59;
+}
+
+:root {
+  color-scheme: dark;
+  --tinta: #141414;
+  --papel: #F1F0EB;
+  --cenoura: #FF5A1F;
+  --branco: #FFFFFF;
+  --pedra: #E4E2DA;
+  --pedra-escura: #D6D3C9;
+  --grafite: #2E2D2A;
+  --carvao: #3A3A37;
+  --cinza: #A3A39E;
+  --cinza-escuro: #5E5E59;
+  --ease-fluido: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-saida: cubic-bezier(0.25, 1, 0.5, 1);
+  --dur-micro: 200ms;
+  background-color: var(--tinta);
+  color: var(--papel);
+}
+
+html,
+body {
+  background-color: var(--tinta);
+  color: var(--papel);
+  margin: 0;
+  padding: 0;
+}

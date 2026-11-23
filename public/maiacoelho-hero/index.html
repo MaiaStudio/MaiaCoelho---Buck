@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>MaiaCoelho — Design &amp; Motion Studio</title>
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="content-wrapper">
+		<div class="maiacoelho-loader" role="status" aria-label="Loading MaiaCoelho">
+			<div class="maiacoelho-loader-bunny">
+				<video class="maiacoelho-loader-video" src="./assets/buck-preloader.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+			</div>
+		</div>
+		<div class="content">
+			<div class="header">
+				<div class="header-logo">
+					<svg role="img" aria-label="MaiaCoelho" xmlns="http://www.w3.org/2000/svg" viewBox="-8 -4 746 112" width="152" height="23">
+						<g fill="none" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke="#F1F0EB">
+							<path d="M0 100 V60 A20 20 0 0 1 40 60 V100 M40 60 A20 20 0 0 1 80 60 V100"/>
+							<circle cx="138" cy="70" r="30"/>
+							<path d="M168 40 V100"/>
+							<path d="M200 40 V100"/>
+							<circle cx="258" cy="70" r="30"/>
+							<path d="M288 40 V100"/>
+							<path d="M369 50.7 A30 30 0 1 0 369 89.3"/>
+							<circle cx="428" cy="70" r="30"/>
+							<path d="M482 70 H542 A30 30 0 1 0 535 89.3"/>
+							<path d="M602 60 A20 20 0 0 1 642 60 V100"/>
+							<circle cx="700" cy="70" r="30"/>
+							<path d="M570 4 V100" stroke="#FF5A1F"/>
+							<path d="M602 100 V26 C602 12 609 4 619 7" stroke="#FF5A1F"/>
+						</g>
+						<circle cx="200" cy="14" r="7.5" fill="#FF5A1F"/>
+					</svg>
+					<span class="header-logo-slogan">DESIGN &amp; MOTION STUDIO</span>
+				</div>
+			</div>
+			<div class="section-wrap" data-visible="false">
+				<div class="scroll">
+					<button class="scroll-btn">EXPLORE</button>
+					<div class="scroll-fillCircle"></div>
+					<svg
+						class="scroll-circle"
+						xmlns="http://www.w3.org/2000/svg"
+						width="200"
+						height="200"
+						viewBox="0 0 200 200"
+						fill="none"
+						color="#F1F0EB"
+						>
+						<defs>
+							<linearGradient id="spinner-gradient">
+							<stop offset="0%" stop-opacity="0" stop-color="currentColor" />
+							<stop offset="100%" stop-opacity="1" stop-color="currentColor" />
+							</linearGradient>
+						</defs>
+						<circle
+							cx="100"
+							cy="100"
+							r="98"
+							fill="none"
+							stroke="url(#spinner-gradient)"
+							stroke-width="2"
+						/>
+					</svg>
+				</div>
+				<canvas id="canvas"></canvas>
+				<div class="subtitles">
+				</div>
+				<div class="section section1">
+					<div class="buck-intro"><span class="buck-intro-dot" aria-hidden="true"></span><span>Hello, I'm</span></div>
+				</div>
+				<div class="section section2">
+				</div>
+				<div class="section section3">
+				</div>
+				<div class="section section4 maiacoelho-contact" data-sent="false" inert aria-hidden="true">
+					<div class="maiacoelho-contact-panel">
+						<p class="maiacoelho-contact-label">CONTACT / MAIACOELHO</p>
+						<h2 class="maiacoelho-contact-title">Let’s make<br><em>something move.</em></h2>
+						<form class="maiacoelho-contact-form" novalidate>
+							<div class="maiacoelho-contact-row">
+								<label>Name<input name="name" autocomplete="name" required maxlength="120" placeholder="Your name"></label>
+								<label>Email<input name="email" type="email" autocomplete="email" required maxlength="200" placeholder="you@company.com"></label>
+							</div>
+							<label>Project<textarea name="message" rows="3" required maxlength="4000" placeholder="Web, social or motion — tell us what you're building"></textarea></label>
+							<div class="maiacoelho-contact-actions">
+								<button class="maiacoelho-contact-submit" type="submit">Start a project <span aria-hidden="true">↗</span></button>
+								<button class="maiacoelho-contact-copy" type="button" data-email="hello@maiacoelho.design" aria-label="Copy email hello@maiacoelho.design">hello@maiacoelho.design</button>
+							</div>
+						</form>
+						<div class="maiacoelho-contact-thanks" role="status">
+							<p>Thank you, <span class="maiacoelho-contact-thanks-name"></span>.<br>We’ll get in touch via email soon.</p>
+							<button class="maiacoelho-contact-reset" type="button">Write another message</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer-timeline">
+					<button class="footer-timeline-item" type="button" data-section="1" aria-label="MaiaCoelho"></button>
+					<button class="footer-timeline-item" type="button" data-section="2" aria-label="Web, social and motion design"></button>
+					<button class="footer-timeline-item" type="button" data-section="3" aria-label="Selected work"></button>
+					<button class="footer-timeline-item" type="button" data-section="4" aria-label="Start a project"></button>
+				</div>
+				<button class="footer-continue" type="button" aria-label="Continue to the page">Continue <span aria-hidden="true">↓</span></button>
+				<div class="footer-copyright">
+					© MAIACOELHO 2026. MADE TO STOP THE SCROLL.
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/script.js"></script>
+</body>
+</html>
