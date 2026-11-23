@@ -15,9 +15,8 @@ import type { NextConfig } from "next";
 const ZONES = [
   { path: "/mott-bow", origin: process.env.ZONE_MOTT_BOW_URL ?? "https://maiacoelho-mott-bow.vercel.app" },
   { path: "/onboard", origin: process.env.ZONE_ONBOARD_URL ?? "https://maiacoelho-onboard.vercel.app" },
-  // Next: uncomment once each project is deployed and answers at <project>.vercel.app/<path>
-  // { path: "/awaken", origin: process.env.ZONE_AWAKEN_URL ?? "https://maiacoelho-awaken.vercel.app" },
-  // { path: "/ironphysique", origin: process.env.ZONE_IRONPHYSIQUE_URL ?? "https://maiacoelho-ironphysique.vercel.app" },
+  { path: "/awaken", origin: process.env.ZONE_AWAKEN_URL ?? "https://awaken-bakery.vercel.app" },
+  { path: "/ironphysique", origin: process.env.ZONE_IRONPHYSIQUE_URL ?? "https://iron-physique-gym.vercel.app" },
 ];
 
 const nextConfig: NextConfig = {
