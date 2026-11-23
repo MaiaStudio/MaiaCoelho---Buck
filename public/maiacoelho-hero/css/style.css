@@ -63,10 +63,12 @@ html, body {
 .header-logo-slogan {
   display: block;
   font-family: var(--mono);
-  font-size: 8.5px;
+  font-size: 6.8px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: .24em;
+  padding-left: .24em;
+  text-align: center;
   color: var(--cinza);
   text-transform: uppercase;
   white-space: nowrap;
@@ -323,7 +325,7 @@ body[data-ready=true][data-section="1"] .buck-intro {
 @media only screen and (max-width: 800px) {
   .header-logo { gap: 4px; }
   .header-logo svg { width: 120px; }
-  .header-logo-slogan { font-size: 6.5px; letter-spacing: .22em; }
+  .header-logo-slogan { font-size: 5.5px; letter-spacing: .22em; padding-left: .22em; }
   .buck-intro {
     top: 9%;
     right: auto;
